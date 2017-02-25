@@ -1,3 +1,5 @@
+# Notes of [Google python course](https://developers.google.com/edu/python)
+
 ## argv
 
 `print sys.argv`, so start count argv[1]
