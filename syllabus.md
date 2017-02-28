@@ -8,6 +8,8 @@
 
 ### 1.Fundamentals of Python
 
+See [0.Fundamentals](Fundamentals.md) for more the 
+
 #### Python interpretor & script files
 
 * `import`
@@ -18,11 +20,16 @@
 
 #### Primitive DataTypes and Operators
 * int
+* float
 * string
 * boolean
 * `None`
 
+#### Input & Output & Format
 
+* `input`
+* `print`
+* `"{} la la land".format("What's")` ...
 
 #### Variables and Collections
 * **variables**
@@ -32,8 +39,9 @@
 * set
 * dict(not map)
 
-#### Control Flow and Iterables
+#### Control Flow and Iterable
 * `if-then-else`
+    * `elif`
 * `while`
 * `for`
 * `break`

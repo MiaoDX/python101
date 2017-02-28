@@ -17,3 +17,5 @@ if __name__ == '__main__':
 ```
 
 Useful when using `import`
+
+* pip freeze or list to find out installed libs
