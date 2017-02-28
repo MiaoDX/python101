@@ -8,7 +8,7 @@
 
 ### 1.Fundamentals of Python
 
-See [0.Fundamentals](Fundamentals.md) for more the 
+See [0.Fundamentals](0.Fundamentals.md) for more info. 
 
 #### Python interpretor & script files
 
