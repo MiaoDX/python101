@@ -7,3 +7,5 @@ Well, this can be an interesting job and nice opportunity to review my knowledge
 This repo contains the necessary materials/teaching notes/slides used in the classes and some other online tutorials and notes, since it's the every first time for me to teach a programming language systematically, chances are that the cources I provided can be subjective, maybe even with prejudice, but for `Python101` should be okay.
 
 See the [syllabus](syllabus.md) to have a glance at what I want to discuss in this little classes.
+
+* [1.Fundamentals of python](courseware/0.Fundamentals.md)
