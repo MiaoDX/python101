@@ -19,3 +19,6 @@ if __name__ == '__main__':
 Useful when using `import`
 
 * pip freeze or list to find out installed libs
+* `li[1:-1:2]`
+    
+    use `-1` to avoid calc the length of list.
