@@ -51,7 +51,9 @@ See [0.Fundamentals](courseware/0.Fundamentals.md) for more info.
 #### Functions
 * `def`
 
-#### Modules & Classes
+~~#### Modules & Classes~~
+
+Now in `3.1.Programming Paradigms`
 
 * `import` again
 * `classes`
@@ -78,7 +80,7 @@ See [0.Fundamentals](courseware/0.Fundamentals.md) for more info.
 
 ### 2.What we can do with python(by now)
 
-**There are some examples can be done with python, we can skip and revisit this section if want to learn the `GRAMMARS` first.**
+**Below are some examples can be done with python, we can skip and revisit this section if want to learn the `GRAMMARS` first.**
 
 * Organize files
 * Excel
@@ -93,7 +95,14 @@ See [0.Fundamentals](courseware/0.Fundamentals.md) for more info.
 [Automate the Boring Stuff with Python](https://automatetheboringstuff.com/)
 
 
-### 3.More about python language
+### 3.1.Programming Paradigms(编程范式)
+
+* OOP -- Object Oriented Programming
+* FP -- Functional Programming
+
+These are big deal, so we should spend some extra time with them.
+
+### 3.2.More about python language
 
 **This section can be learned systematically, but can also learn when meet them in the wild.**
 
@@ -101,7 +110,7 @@ See [0.Fundamentals](courseware/0.Fundamentals.md) for more info.
 * Arguments of methods
 * List/Set/Dict Comprehensions
 * Generator & yield
-* More OOPs
+
 * Error handler
 * RE
 
