@@ -9,3 +9,4 @@ This repo contains the necessary materials/teaching notes/slides used in the cla
 See the [syllabus](syllabus.md) to have a glance at what I want to discuss in this little classes.
 
 * [1.Fundamentals of python](courseware/1.Fundamentals.md)
+* [2.Automate_boring_stuff](courseware/2.Automate_boring_stuff.md)
