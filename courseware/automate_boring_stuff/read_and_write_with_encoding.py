@@ -4,6 +4,9 @@ def get_encoding(file_path):
         first_line = file.readline()
 
     encoding = chardet.detect(first_line).get('encoding')
+
+    print('encoding by chardet:{}'.format(encoding))
+
     if 'utf' in encoding.lower():
         return 'utf-8'
     elif 'ascii' in encoding.lower():
