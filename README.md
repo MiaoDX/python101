@@ -11,3 +11,5 @@ See the [syllabus](syllabus.md) to have a glance at what I want to discuss in th
 * [1.Fundamentals of python](courseware/1.Fundamentals.md)
 * [2.Automate_boring_stuff](courseware/2.Automate_boring_stuff.md)
 * [3.More_about_python](courseware/3.More_about_python.md)
+* [4.Numpy_and_beyond](courseware/4.Numpy_and_beyond.md)
+* [4.Numpy_and_beyond_images](courseware/4.Numpy_and_beyond_images.md)
