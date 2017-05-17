@@ -1,15 +1,19 @@
 # Different ways to install the scikit-learn environments
 
+* `pip` way
+* `Miniconda` way
+* `Anaconda` suite
+
 ## `pip` way
 
-I failed to do this on windows. (Great chances are that I miss some crucial dependences for build).
+I failed to do this on windows. (Great chances are that I miss some crucial dependences for building the necessary libraries).
 
 ## `Miniconda` way
 
-1. Install `Miniconda`
+### Install `Miniconda`
     * download the right version for your system from the [official site](https://conda.io/miniconda.html)
-    * instead of polluting the PATH
-        - choose `Just Me(recommended)` in the `Installation Type`, which will make the installation destination folder becomes `C:\Users\<YOUR_PC_NAME>\Miniconda3` (or something like this in other platforms), we will use this latter.
+    * in case of polluting the PATH
+        - choose `Just Me(recommended)` in the `Installation Type`, which will make the installation destination folder becomes `C:\Users\<YOUR_PC_NAME>\Miniconda3` (or something like this in other platforms), we will refer to this latter.
         - uncheck the second one in the `Advanced Options`, so that the default python3 path is not changed.
 
 ![installation_type](ML_scikit_intro/miniconda_1.png)
@@ -17,9 +21,9 @@ I failed to do this on windows. (Great chances are that I miss some crucial depe
 ![advanced_options](ML_scikit_intro/miniconda_2.png)
 
 
-2. Create a fresh virtual environment
+### Create a fresh virtual environment
 
-This can be thought as unnecessary, but it is necessary!
+This can be thought as unnecessary at first glance, but it is necessary!
 
 ``` vi
 # type this in any folder is OK
@@ -50,7 +54,7 @@ So,
 * `Solving package specifications: .` will take care all the dependences
 * `pip:            9.0.1-py27_1` or `vs2008_runtime: 9.00.30729.5054-0` and so on, all libs will be installed with suitable harmonious versions.
 
-Then just type `Enter` to that question, this will lead us to:
+Then just type `Enter` to that question will lead us to:
 
 ``` vi
 vs2008_runtime 100% |###############################| Time: 0:00:25  40.90 kB/s
@@ -69,9 +73,9 @@ pip-9.0.1-py27 100% |###############################| Time: 0:00:00   3.50 MB/s
 #
 ```
 
-This will install a fresh environment of python2 into folder `C:\Users\miao\Miniconda3\envs>`. NOTE:**Change miao to <YOUR_PC_NAME>**
+This will install a fresh environment of python2 into folder `C:\Users\miao\Miniconda3\envs>`. NOTE:**Change `miao` to `YOUR_PC_NAME`**
 
-At last, just type `activate test_py2` will get us to the working virtual environment, and we can test it:
+At last, just type `activate test_py2` will make the virtual environment activated, and we can test it:
 
 ``` vi
 H:\>activate test_py2
@@ -89,7 +93,7 @@ C:\Users\miao\Miniconda3\envs\test_py2\Scripts\conda
 ```
 
 
-In case we forget what environments we have created, type `conda info --envs` will show us the results:
+In case we forget environments' names we have created, type `conda info --envs` will show us the results:
 
 ```
 # conda environments:
@@ -98,9 +102,9 @@ test_py2                 C:\Users\miao\Miniconda3\envs\test_py2
 root                  *  C:\Users\miao\Miniconda3
 ```
 
-And of course, you can choose different install configurations, type `conda install --help` for more info.
+And of course, you can choose different install configurations, like changing the destination folder of the installation (`-p` flag, with should use without `-n`), type `conda install --help` for more info.
 
-3. Install the necessary libraries.
+### Install the necessary libraries.
 
 We will create another virtual environment named `sklearn_py3` as before:
 
@@ -133,3 +137,54 @@ To test it, try this simple example:
 ```
 
 And you are ready for the Machine Learning world!
+
+
+## `Anaconda` Suite
+
+Download the proper version from [the official site](https://www.continuum.io/downloads).
+
+And create virtual environment as before, but you will find that no `extra` libraries appeared.
+
+In fact, what we should do is:
+
+``` vi
+$ conda create -n sklearn_py3_all --clone root
+```
+
+Which means we want to clone the environments of `root`, in this way, we don't need `conda install` all the installed libraries within the `Anaconda` suite.
+
+You will get something like below:
+
+``` vi
+Source:      C:\Users\miao\Anaconda3
+Destination: C:\Users\miao\Anaconda3\envs\sklearn_py3_all
+The following packages cannot be cloned out of the root environment:
+ - conda-build-2.0.2-py35_0
+ - conda-4.3.17-py35_0
+ - conda-env-2.6.0-0
+Packages: 179
+Files: 83
+#
+# To activate this environment, use:
+# > activate sklearn_py3_all
+#
+# To deactivate this environment, use:
+# > deactivate skleran_py3_all
+#
+# * for power-users using bash, you must source
+#
+```
+
+Test it use the former example -- the iris dataset example.
+
+## update before use
+
+It's suggested to update all necessary libraries at first, after `activate` our environment, type:
+
+``` vi
+$ conda update --all
+```
+
+## Mirrors for `conda`
+
+When encountering slow internet connection, checkout [https://mirrors.tuna.tsinghua.edu.cn/help/anaconda/](https://mirrors.tuna.tsinghua.edu.cn/help/anaconda/).
